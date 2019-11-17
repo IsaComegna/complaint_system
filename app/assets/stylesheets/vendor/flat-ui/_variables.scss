@@ -1,0 +1,66 @@
+$flat-ui-sass-asset-helper: (flat-ui-font-path("") != unquote('flat-ui-font-path("")')) !default;
+
+$turquoise:                 #1abc9c !default;
+$green-sea:                 #16a085 !default;
+
+$emerald:                   #2ecc71 !default;
+$nephritis:                 #27ae60 !default;
+
+$peter-river:               #3498db !default;
+$belize-hole:               #2980b9 !default;
+
+$amethyst:                  #9b59b6 !default;
+$wisteria:                  #8e44ad !default;
+
+$wet-asphalt:               #34495e !default;
+$midnight-blue:             #2c3e50 !default;
+
+$sun-flower:                #f1c40f !default;
+$orange:                    #f39c12 !default;
+
+$carrot:                    #e67e22 !default;
+$pumpkin:                   #d35400 !default;
+
+$alizarin:                  #e74c3c !default;
+$pomegranate:               #c0392b !default;
+
+$clouds:                    #ecf0f1 !default;
+$silver:                    #bdc3c7 !default;
+
+$concrete:                  #95a5a6 !default;
+$asbestos:                  #7f8c8d !default;
+
+$inverse:                   white !default;
+
+$brand-primary:             $wet-asphalt !default;
+$brand-secondary:           $turquoise !default;
+$brand-success:             $emerald !default;
+$brand-warning:             $orange !default;
+$brand-danger:              $alizarin !default;
+$brand-info:                $peter-river !default;
+
+$primary-400:                      #299E85 !default;
+$primary-600:                      #088066 !default;
+$secondary:                        #10c399 !default;
+$custom-darker-green:              #00614A !default;
+$custom-dark-green:                #009874 !default;
+$custom-link-green:                #10C399 !default;
+$custom-light-green:               #43816f !default;
+$custom-light-gray:                #FAFAFA !default;
+$custom-medium-gray:               #666666 !default;
+$custom-gray:                      #94A5A6 !default;
+
+$black:                  #000000;
+$dark:                   #333333;
+$gray:                   #B1C2C4;
+$gray-dark:              #646464 !default;
+$gray-light:             #ECF0F1;
+$blue:                   #1E88E5 !default;
+$blue-dark:              #1565C0 !default;
+$blue-light:             #42A5F5 !default;
+$yellow:                 #F1C40E;
+$yellow-light:           #F6DC7B !default;
+$green:                  #2ECC71;
+$green-light:            #95E1AD;
+$red:                    #e74c3c;
+$white:                  #FFFFFF !default;

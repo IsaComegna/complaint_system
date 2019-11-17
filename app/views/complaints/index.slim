@@ -1,0 +1,21 @@
+.container-fluid
+  .col-md-12
+    h4.h4 Todas as denúncias
+    .col-md-12
+        .table-responsive.table-responsive-vertical
+          table.table.table-hover
+            thead.table__header.table__header--dark
+              tr.tr
+                th.text-left scope='col' Nome do denunciante
+                th.text-left scope='col' Data do ocorrido
+                th.text-left scope='col' Descrição
+                th.text-center scope='col'
+            tbody.table__body.table__body--border-thin.table__body--dark-gray
+              - @complaints.each do |complaint|
+                tr.tr
+                  td.td.text-left
+                    label.label-value data-label='Nome do denunciante' = complaint.complainer_name
+                  td.td.text-left.col-md-3
+                    label.label-value data-label='Descrição' = complaint.description
+                  td.td.text-left.col-md-1
+                    label.label-value data-label='Data do ocorrido' = complaint.date_of_occurrence

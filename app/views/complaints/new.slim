@@ -1,0 +1,24 @@
+.container-fluid
+  .col-md-12
+    h4.h4.h4--with-margin-bottom.text-left Envie sua denúncia
+    p.small-text.text-left Adicione os dados para enviar sua denúncia!
+
+    = form_tag complaints_create_path, method: :post, id: 'create-complaint', class: 'js-create-complaint-form' do
+        .col-md-10
+          table.table
+            tbody.table__body.table__body--border-thin.table__body--dark-gray.table-responsive-horizontal.js-address-fields
+              tr
+                th Seu nome
+                td.text-left.col-md-7.col-xs-7
+                  = text_field_tag :complainer_name, nil, class: 'form-control typeahead', required: false, placeholder: 'ex: Maria dos Santos'
+              tr
+                th Data de ocorrência
+                td.text-left.col-md-7.col-xs-7
+                  = text_field_tag :occurrence_date, nil, class: 'form-control typeahead', required: false, placeholder: 'ex: 10/11/2019'
+              tr
+                th Descrição do ocorrido
+                td.text-left.col-md-7.col-xs-7
+                  = text_field_tag :description, nil, class: 'form-control typeahead', required: false, placeholder: '....'
+          .text-right
+            = submit_tag 'Enviar', class: 'btn button button--blue js-create-complaint-button', form: 'create-complaint', id: 'create-complaint-button', disabled: false
+
