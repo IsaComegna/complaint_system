@@ -38,7 +38,8 @@ test:
   password: postgres
 
 production:
-  <<: *default
-  database: complaint-app_production
-  username: complaint-app
-  password: <%= ENV['COMPLAINT-APP_DATABASE_PASSWORD'] %>
+  database: d7lbi1e04dnqvd
+  adapter: postgresql
+  host: ec2-54-243-241-62.compute-1.amazonaws.com
+  username: qisrsrnsvwbohz
+  password: 2a3e099d7302d3e2108ea9cdc3839a6b59f098dbcff4195d953a60c0cb1b7b31
